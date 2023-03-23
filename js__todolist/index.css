@@ -1,0 +1,101 @@
+#todoList{
+    display: flex;
+    justify-content: center;
+    padding-top : 70px;
+    background-color: gray;
+    height: calc(100vh - 70px);
+}
+.list{
+    background-color: white;
+    padding: 20px 40px;
+    width : 400px;
+    border-radius:10px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+}
+form {
+    margin: 10px;
+    width: 300px;
+    display: flex;
+    height: 30px;
+}
+form > button {
+    margin-left: auto;
+    background-color: rgb(72, 72, 199);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+form > input {
+    width: 100%;
+    margin-right: 3px;
+    border-radius: 5px;
+    border: 1px solid gray
+}
+
+/* Button List */
+
+.buttonList{
+    align-self: flex-start;
+    margin-left: 50px;
+}
+.active{
+    background-color: rgb(8, 8, 241);
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+/* ul List */
+
+.uList{
+    align-self: flex-start;
+    margin-left: 5px;
+    display: block;
+    width: 300px; 
+}
+.uList > li {
+    list-style: none;
+    display: flex;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 11px -1px rgba(0, 0, 0, .4);
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.listButton{
+    margin-left : auto; 
+    background-color: rgb(212, 19, 19);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 60px;
+    cursor: pointer;
+}
+
+/* JSONalert */
+
+.JSONalert{
+    height: 50px;
+    background-color: rgb(230, 12, 12);
+    padding: 10px 10px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+/* Todo List */
+
+.hide-completed .is-completed{
+    display: none;
+}
+
+.hide-todo .todo:not(.is-completed){
+    display : none;
+}
